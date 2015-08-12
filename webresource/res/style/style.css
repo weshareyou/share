@@ -1,0 +1,29 @@
+.login {
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+}
+.login .title {
+    padding: 26px 0 16px;
+    font: 18px/28px tahoma,arial,"Hiragino Sans GB","Microsoft Yahei",\5b8b\4f53;
+    color: #fff;
+}
+.login-list li {
+    padding: 0 0 10px;
+}
+.login-list .ui-label {
+    display: inline-block;
+    width: 50px;
+    font-size: 12px;
+    color: #fff;
+}
+.login-list .ui-input {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+}
+.login-submit {
+
+}
