@@ -1,43 +1,4 @@
-.login {
-    width: 90%;
-    margin: 50px auto 0;
-    padding: 0 20px;
-    background: rgba(0,0,0,.3);
-    box-sizing: border-box;
-}
-.login .title {
-    padding: 26px 0 16px;
-    font: 18px/28px tahoma,arial,"Hiragino Sans GB","Microsoft Yahei",\5b8b\4f53;
-    color: #fff;
-}
-.login-list li {
-    padding: 0 0 10px;
-}
-.login-list .ui-label {
-    display: inline-block;
-    width: 50px;
-    font-size: 12px;
-    color: #fff;
-}
-.login-list .ui-input {
-    width: 200px;
-    height: 30px;
-    padding: 0 10px;
-}
-.login-submit {
-
-}
-
-
-.sample-buttons .pure-button {
-    width: 30%;
-    margin: 0.2em;
-}
-.sample-buttons p {
-    margin: 0.5em;
-}
-
-
+/*按钮公用样式*/
 .pure-button-a {
     background: #e1f2fa;
     color: #5992aa;
@@ -64,6 +25,7 @@
     background: #333;
     color: #fff;
 }
+
 .pure-button-d {
     background: #d3eda3;
     color: #72962e;
@@ -73,6 +35,7 @@
     background: #f5ab9e;
     color: #8c3a2b;
 }
+
 .pure-button-f {
     background: #ddaeff;
     color: #8156a7;
@@ -87,3 +50,6 @@
     background: #008ed4;
     color: #fff;
 }
+
+/**注册模块**/
+
