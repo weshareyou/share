@@ -13,7 +13,11 @@
             zepto: 'bower_components/zepto/zepto.min',
             jquery: 'bower_components/jquery/dist/jquery.min',
             underscore: 'bower_components/underscore/underscore',
-            backbone: 'bower_components/backbone/backbone'
+            backbone: 'bower_components/backbone/backbone',
+            login: 'webresource/javascript/views/login/login',
+            forget: 'webresource/javascript/views/login/forget',
+            reset: 'webresource/javascript/views/login/reset',
+            register: 'webresource/javascript/views/login/register'
         },
         shim: {
             'underscore': {
@@ -33,16 +37,20 @@
     };
 
     require.config(config);
-    require(['underscore', 'backbone'], function () {
-        var Router = Backbone.Router.extend({
-            routes: {
-                "view1": 'view1'
-            },
-            view1: function () {
+    var viewName = document.getElementById('main').getAttribute('data-view');
+    require([viewName], function (view) {
 
-            }
-        })
-        Backbone.history.start();
+        new view();
+
+        //var Router = Backbone.Router.extend({
+        //    routes: {
+        //        "view1": 'view1'
+        //    },
+        //    view1: function () {
+        //
+        //    }
+        //});
+        //Backbone.history.start();
     });
 
 })(window);

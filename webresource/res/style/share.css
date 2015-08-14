@@ -51,5 +51,43 @@
     color: #fff;
 }
 
-/**注册模块**/
+.pure-button-blue {
+    background: #099fde;
+    color: #fff;
+}
+
+.pure-button-long {
+    width: 100%;
+    height: 44px;
+}
+
+.m-head {
+    height: 48px;
+    background-color: #099fde;
+}
+
+/**login模块**/
+.m-login .pure-button {
+
+}
+
+.m-login .pure-form {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 110px;
+}
+
+.m-login .phone, .m-login .pwd {
+    border-bottom: 1px solid #999;
+}
+
+.m-login .phone input, .m-login .pwd input{
+    width:70%;
+}
+
+.m-login .forget {
+    float: right;
+}
+
+
 

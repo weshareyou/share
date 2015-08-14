@@ -27,12 +27,9 @@
                     <span>密码:</span>
                     <input type="password" placeholder="请输入密码" id="pwd">
                 </div>
-                <div class="pwd">
-                    <span>验证码:</span>
-                    <input type="number" placeholder="请输入密码" id="code">
-                    <button class="pure-button pure-button-blue" id="getcode">获取验证码</button>
-                </div>
-                <button class="pure-button pure-button-long pure-button-blue" id="register">注册</button>
+                <div class="forget"><a href="#" id="forget">忘记密码？</a></div>
+                <button class="pure-button pure-button-long pure-button-blue" id="login">登录</button>
+                <div class="forget"><a href="#" id="register">没有账号？</a></div>
             </fieldset>
         </form>
     </div>
@@ -41,5 +38,5 @@
 <body>
 </body>
 <script src="../../bower_components/requirejs/require.js" data-main="../javascript/main.js" id="main"
-        data-baseurl="../../" data-view="register"></script>
+        data-baseurl="../../" data-view="login"></script>
 </html>
