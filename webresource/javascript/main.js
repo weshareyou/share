@@ -14,10 +14,14 @@
             jquery: 'bower_components/jquery/dist/jquery.min',
             underscore: 'bower_components/underscore/underscore',
             backbone: 'bower_components/backbone/backbone',
+
             login: 'webresource/javascript/views/login/login',
             forget: 'webresource/javascript/views/login/forget',
             reset: 'webresource/javascript/views/login/reset',
-            register: 'webresource/javascript/views/login/register'
+            register: 'webresource/javascript/views/login/register',
+
+            list:'webresource/javascript/views/list/list',
+            detail:'webresource/javascript/views/list/detail'
         },
         shim: {
             'underscore': {

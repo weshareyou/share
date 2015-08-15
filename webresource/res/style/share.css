@@ -89,5 +89,19 @@
     float: right;
 }
 
+/** list模块 **/
+.m-list ul {
+    border: 1px solid red;
+}
+
+.m-list ul li {
+    border: 1px solid blue;
+}
+
+/** detail 模块**/
+.m-detail {
+
+}
+
 
 

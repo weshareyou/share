@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>登录</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="../res/style/reset.css" rel="stylesheet"/>
+    <link href="../res/style/pure-release-0.5.0/pure-min.css" rel="stylesheet">
+    <link href="../res/style/pure-release-0.5.0/buttons-min.css" rel="stylesheet">
+    <link href="../res/style/pure-release-0.5.0/buttons-core-min.css" rel="stylesheet">
+    <link href="../res/style/share.css" rel="stylesheet"/>
+</head>
+
+<header class="m-head">导航，功能待写</header>
+<div id="viewContainer" class="wrap">
+    <div class="m-detail"></div>
+</div>
+
+<script type="text/template" id="detail_tpl">
+    <div><%=data.description%></div>
+    <div>发起人<span><%=data.creator.name%></span> <span><%=data.creator.status%></span></div>
+    <div>广州大学</div>
+    <img src="#"/>
+    <div>目前报名价额：<span><%=data.price%></span>元</div>
+    <div>参与价:<span><%=data.maxprice%></span>-<span><%=data.minprice%></span></div>
+    <div>已报名参与人数：<span><%=data.count%></span>人</div>
+    <div>限人数<span><%=data.maxcount%></span>-<span><%=data.mincount%></span></div>
+    <div>活动时间:<span><%=data.starttime%></span>-<span><%=data.endtime%></span></div>
+    <div>活动地址:<div><%=data.address%></div></div>
+    <div>项目概述及流程安排：<p><%=data.summary%></p></div>
+    <div>关于众筹对象<p><%=data.about%></p></div>
+    <div>其它说明<p><%=data.other%></p></div>
+    <div>
+        <div><span><%=data.member.length%></span>人报名</div>
+        <ul>
+            <%data.member.forEach(function(item,index){%>
+            <li>
+                <a href="#">
+                    <img src="<%=item.image%>">
+                    <span><%=item.name%></span>
+                    <span><%=item.time%></span>
+                </a>
+            </li>
+            <%})%>
+        </ul>
+    </div>
+
+
+</script>
+
+<script type="text/template" id="detail_tpl111">
+    <div><%=data.description%></div>
+    <div>发起人<span><%=data.creator.name%></span> <span><%=data.creator.status%></span></div>
+    <div>广州大学</div>
+    <img src="#"/>
+    <div>目前报名价额：<span><%=data.price%></span>元</div>
+    <div>参与价:<span><%=data.maxprice%></span>-<span><%=data.minprice%></span></div>
+    <div>已报名参与人数：<span><%=data.count%></span>人</div>
+    <div>限人数<span><%=data.maxcount%></span>-<span><%=data.mincount%></span></div>
+    <div>活动时间:<span><%=data.starttime%></span>-<span><%=data.endtime%></span></div>
+    <div>活动地址:<div><%=data.address%></div></div>
+    <div>项目概述及流程安排：<p><%=data.summary%></p></div>
+    <div>关于众筹对象<p><%=data.about%></p></div>
+    <div>其它说明<p><%=data.other%></p></div>
+    <div>
+        <div><span><%=data.member.length%></span>人报名</div>
+        <ul>
+            <%data.member.forEach(function(item,index){%>
+            <li>
+                <a href="#">
+                    <img src="<%=item.image%>">
+                    <span><%=item.name%></span>
+                    <span><%=item.time%></span>
+                </a>
+            </li>
+            <%})%>
+        </ul>
+    </div>
+</script>
+
+<footer></footer>
+<body>
+</body>
+<script src="../../bower_components/requirejs/require.js" data-main="../javascript/main.js" id="main"
+        data-baseurl="../../" data-view="detail"></script>
+</html>
