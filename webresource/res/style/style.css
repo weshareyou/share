@@ -1,89 +1,193 @@
+body{
+    background: #f7f7f8;
+}
+.flex_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex_container .flex_box {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+
 .login {
-    width: 90%;
-    margin: 50px auto 0;
-    padding: 0 20px;
-    background: rgba(0,0,0,.3);
-    box-sizing: border-box;
+    margin: 100px auto 0;
 }
-.login .title {
-    padding: 26px 0 16px;
-    font: 18px/28px tahoma,arial,"Hiragino Sans GB","Microsoft Yahei",\5b8b\4f53;
+.login-list {
+    margin-bottom: 30px;
+    border-top: solid 1px #d8d8d9;
+}
+.login-item {
+    position: relative;
+    margin-top: -1px;
+    padding: 0 25px 0 140px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #d8d8d9;
+    border-top: solid 1px #d8d8d9;
+    background: #fff;
+}
+.login-item .login-label {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 115px;
+    font-size: 15px;
+    color: #828282;
+}
+.login-item .login-text {
+    width: 100%;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #565656;
+}
+.login-item.mb20 {
+    margin-bottom: 20px;
+}
+.login-clear {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 15px;
+    width: 30px;
+    height: 100%;
+}
+.login-clear span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 30px;
+    top: 50%!important;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+    background: #b1b1b1;
+}
+.login-clear span:before,
+.login-clear span:after {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    width: 2px;
+    height: 8px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.login-clear span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.btn-box {
+    padding: 0 25px 10px;
+}
+.btn-box .register {
+    margin-right: 25px;
+    font-size: 15px;
+    line-height: 40px;
+    color: #555656;
+    text-align: center;
+    border: 4px solid #6190cc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fafafb;
+}
+.btn-box .submit {
+    line-height: 48px;
+    font-size: 15px;
     color: #fff;
+    border: 0;
+    border-radius: 5px;
+    background: #6190cc;
 }
-.login-list li {
-    padding: 0 0 10px;
+.login-forget {
+    margin-right: 25px;
+    text-align: right;
 }
-.login-list .ui-label {
+.login-forget a {
+    color: #408ccb;
+}
+.login-other {
+    border-top: #e1e1e2 solid 1px;
+    position: relative;
+    margin: 50px 25px 0;
+}
+.login-other .text {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    text-align: center;
+    background: #f7f7f8;
+}
+.login-other ul {
+    overflow: hidden;
+    padding: 0 30px;
+}
+.login-other li {
+    float: left;
+    margin-top: 50px;
+    width: 33.333333%;
+    height: 50px;
+}
+.login-other li:nth-child(2){
+    text-align: center;
+}
+.login-other li:nth-child(3){
+    text-align: right;
+}
+.login-other li:before {
+    content: "";
     display: inline-block;
     width: 50px;
-    font-size: 12px;
-    color: #fff;
+    height: 50px;
+    background: url(../image/icon_login.png) no-repeat;
+    background-size: 50px;
 }
-.login-list .ui-input {
+.login-other .icon-weixin:before {
+    background-position: 0 0;
+}
+.login-other .icon-qq:before {
+    background-position: 0 -50px;
+}
+.login-other .icon-weibo:before {
+    background-position: 0 -102px;
+}
+.error-tips {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -100px;
     width: 200px;
-    height: 30px;
-    padding: 0 10px;
-}
-.login-submit {
-
-}
-
-
-.sample-buttons .pure-button {
-    width: 30%;
-    margin: 0.2em;
-}
-.sample-buttons p {
-    margin: 0.5em;
-}
-
-
-.pure-button-a {
-    background: #e1f2fa;
-    color: #5992aa;
-}
-
-.pure-button-b {
-    background: #fcebbd;
-    color: #af9540;
-}
-
-.pure-button-c,
-.pure-button-d,
-.pure-button-e {
-    border-radius: 8px;
-}
-
-.pure-button-f,
-.pure-button-g,
-.pure-button-h {
-    border-radius: 20px;
-}
-
-.pure-button-c {
-    background: #333;
+    height: 44px;
+    line-height: 44px;
     color: #fff;
-}
-.pure-button-d {
-    background: #d3eda3;
-    color: #72962e;
-}
-
-.pure-button-e {
-    background: #f5ab9e;
-    color: #8c3a2b;
-}
-.pure-button-f {
-    background: #ddaeff;
-    color: #8156a7;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
 }
 
-.pure-button-g {
-    background: #f57b00;
-    color: #ffca95;
-}
 
-.pure-button-h {
-    background: #008ed4;
+/** 注册 **/
+.send_code {
+    margin-top: 5px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
     color: #fff;
+    border-radius: 5px;
+    background: #6190cc;
 }
