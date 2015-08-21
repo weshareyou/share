@@ -1,5 +1,10 @@
-body{
+body {
     background: #f7f7f8;
+}
+.ellips {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .flex_container {
     display: -webkit-box;
@@ -16,13 +21,15 @@ body{
     flex: 1;
     overflow: hidden;
 }
+.mb10 {
+    margin-bottom: 10px;
+}
 
 .login {
     margin: 100px auto 0;
 }
 .login-list {
     margin-bottom: 30px;
-    border-top: solid 1px #d8d8d9;
 }
 .login-item {
     position: relative;
@@ -30,8 +37,8 @@ body{
     padding: 0 25px 0 140px;
     height: 50px;
     line-height: 50px;
-    border-bottom: solid 1px #d8d8d9;
     border-top: solid 1px #d8d8d9;
+    border-bottom: solid 1px #d8d8d9;
     background: #fff;
 }
 .login-item .login-label {
@@ -190,4 +197,134 @@ body{
     color: #fff;
     border-radius: 5px;
     background: #6190cc;
+}
+
+
+/** 信息 **/
+.border-list {
+    border-top: #c9cacb solid 1px;
+    border-bottom: #c9cacb solid 1px;
+}
+.course-list {
+    margin-top: 10px;
+}
+.course-list li {
+    position: relative;
+    margin-top: -1px;
+    padding: 0 15px 0 95px;
+    height: 50px;
+    line-height: 50px;
+    border-top: #c9cacb solid 1px;
+    border-bottom: #c9cacb solid 1px;
+    background: #fff;
+}
+.course-list .label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    display: inline-block;
+    width: 80px;
+    font-size: 15px;
+    line-height: 50px;
+    color: #828282;
+}
+.course-list .text {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    color: #555656;
+}
+.course-list .num {
+    display: inline-block;
+    width: 55px;
+    height: 40px;
+    text-align: center;
+    border-bottom: #e6e6e7 solid 1px;
+}
+.course-list .address {
+    width: 100%;
+}
+.course-tips {
+    color: #828282;
+    margin: 5px 15px 10px;
+}
+.course-tips a {
+    color: #418bcb;
+}
+
+.course-info-list li {
+    margin: 10px;
+    padding: 6px 15px;
+    border: #828282 solid 1px;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
+.course-info-list p {
+    line-height: 2;
+}
+.course-info-list span {
+    margin-right: 10px;
+    font-size: 15px;
+    color: #555656;
+}
+.course-info-list .add-item {
+    padding: 13px 15px 11px;
+    text-align: center;
+}
+.course-info-list .add-item span {
+    color: #828282;
+}
+.course-info-list .add {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 6px;
+}
+.course-info-list .add:before,
+.course-info-list .add:after {
+    position: absolute;
+    content:"";
+}
+.course-info-list .add:before {
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #a2a2a3;
+}
+.course-info-list .add:after {
+    top: 0;
+    left: 9px;
+    width: 2px;
+    height: 20px;
+    background: #a2a2a3;
+}
+.course-about-list li {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background: #fff;
+}
+.course-about-list .title {
+    font-size: 15px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.course-about-list p {
+    color: #555656;
+    margin-bottom: 5px;
+}
+
+.service-terms {
+    margin: 20px 25px 10px;
+}
+.service-terms input {
+    vertical-align: 1px;
+    margin-right: 4px;
+}
+.service-terms a {
+    color: #6190cc;
+}
+.btn-box .submit.mr25 {
+    margin-right: 25px;
 }

@@ -26,7 +26,6 @@ input,textarea,select {
 	resize:none;
 	outline:0;
 	box-shadow: none;
-	-webkit-appearance: none;
 }
 
 table {
