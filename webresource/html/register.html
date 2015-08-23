@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>登录</title>
+    <title>注册</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta content="telephone=no" name="format-detection" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,7 +14,7 @@
         <form action="#">
             <div class="login-list">
                 <div class="login-item flex_container">
-                    <label class="login-label">账&nbsp;&nbsp;&nbsp;&nbsp;户</label>
+                    <label class="login-label">手机号</label>
                     <input type="text" class="login-text flex_container" placeholder="18634983389">
                     <a class="login-clear" href="javascript:;">
                         <span></span>
@@ -24,28 +24,19 @@
                     <label class="login-label">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
                     <input type="password" class="login-text flex_container" placeholder="6-20位字母、数字和符号">
                 </div>
+                <div class="login-item flex_container">
+                    <label class="login-label">验证码</label>
+                    <input type="password" class="login-text flex_container" placeholder="验证码">
+                    <a class="send_code" href="javascript:;">123</a>
+                </div>
             </div>
-            <div class="btn-box flex_container">
-                <button type="submit" class="register flex_box">注 册</button>
-                <button type="submit" class="submit flex_box">登　录</button>
-            </div>
-            <div class="login-forget">
-                <a href="#">忘记密码？</a>
+            <div class="btn-box flex_container ">
+                <button type="submit" class="submit flex_box">注　册</button>
             </div>
             <div class="login-other">
-                <div class="text">用以下方式登录，无需注册</div>
-                <ul>
-                    <li class="icon-weixin"></li>
-                    <li class="icon-qq"></li>
-                    <li class="icon-weibo"></li>
-                </ul>
+                <div class="text">已有账户</div>
             </div>
         </form>
-        <div class="error-tips">
-            请输入您的账户
-            <!--请输入您的密码
-            账户或密码错误 -->
-        </div>
     </div>
 </body>
 </html>
