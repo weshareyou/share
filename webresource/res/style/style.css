@@ -21,10 +21,52 @@ body {
     flex: 1;
     overflow: hidden;
 }
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.mt10 {
+    margin-top: 10px;
+}
 .mb10 {
     margin-bottom: 10px;
 }
 
+.header {
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    background: #6190cc;
+}
+.header .back {
+    position: absolute;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+}
+.header .icon-back:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header .title {
+    padding: 0 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/** 登录、注册、找回密码等 **/
 .login {
     margin: 100px auto 0;
 }
@@ -204,9 +246,6 @@ body {
     border-top: #c9cacb solid 1px;
     border-bottom: #c9cacb solid 1px;
 }
-.course-list {
-    margin-top: 10px;
-}
 .course-list li {
     position: relative;
     margin-top: -1px;
@@ -235,12 +274,16 @@ body {
 }
 .course-list .num {
     display: inline-block;
-    width: 55px;
+    width: 28%;
     height: 40px;
     text-align: center;
     border-bottom: #e6e6e7 solid 1px;
 }
-.course-list .address {
+.course-list .w {
+    display: inline-block;
+    width: 30px;
+}
+.course-list input {
     width: 100%;
 }
 .course-tips {
@@ -262,9 +305,11 @@ body {
     line-height: 2;
 }
 .course-info-list span {
-    margin-right: 10px;
     font-size: 15px;
     color: #555656;
+}
+.course-info-list .mr10 {
+    margin-right: 10px;
 }
 .course-info-list .add-item {
     padding: 13px 15px 11px;
@@ -313,6 +358,11 @@ body {
     color: #555656;
     margin-bottom: 5px;
 }
+.course-about-list textarea {
+    width: 100%;
+    height: 78px;
+    color: #555656;
+}
 
 .service-terms {
     margin: 20px 25px 10px;
@@ -324,11 +374,22 @@ body {
 .service-terms a {
     color: #6190cc;
 }
-.btn-box .submit.mr25 {
-    margin-right: 25px;
+.btn-box .submit.mr {
+    margin-right: 15px;
 }
 
-
+/** addCourse **/
+.course-title {
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.course-list.course-list2 li {
+    padding-left: 125px;
+}
+.course-list.course-list2 .label {
+    width: 110px;
+}
 
 /** guide **/
 .guide-main {
@@ -342,3 +403,11 @@ body {
     padding-bottom: 30px;
 }
 
+
+/**  preferential **/
+.course-list-mt15 {
+    margin-top: 15px;
+}
+.btn-box-mt25 {
+    margin-top: 25px;
+}

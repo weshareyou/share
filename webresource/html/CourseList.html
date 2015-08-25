@@ -11,18 +11,33 @@
 </head>
 <body>
     <div>
-        <ul class="course-list">
+        <div class="header">
+            <span class="back">
+                <i class="icon-back"></i>
+            </span>
+            <h1 class="title">
+                发起项目
+            </h1>
+        </div>
+
+        <ul class="course-list mt10">
             <li class="mb10">
                 <label class="label">课程主题</label>
-                <div class="text ellips">找学JAVA的人，一起报入门培训课程</div>
+                <div class="text">
+                    <input type="text" placeholder="请输入课程主题" />
+                </div>
             </li>
             <li class="mb10">
                 <label class="label">参与人数</label>
-                <div class="text">限制<input type="text" class="num" value="8000" />～<input class="num" value="10000" />人参与</div>
+                <div class="text">
+                    <span class="w">限制</span>
+                    <input type="text" class="num" value="8000" />～<input class="num" value="10000" />
+                    <span class="fr">人参与</span>
+                </div>
             </li>
             <li>
                 <label class="label">筹资总额</label>
-                <div class="text"><input type="text" class="num" value="8000" />～<input class="num" value="10000" />元</div>
+                <div class="text"><span class="w">&nbsp;</span><input type="text" class="num" value="8000" />～<input class="num" value="10000" /><span class="fr">元</span></div>
             </li>
         </ul>
 
@@ -43,18 +58,31 @@
             </li>
             <li>
                 <label class="label">详细地址</label>
-                <div class="text"><input type="text" class="address" value="中山在学图书馆" /></div>
+                <div class="text"><input type="text" placeholder="中山在学图书馆" /></div>
             </li>
         </ul>
 
         <ul class="course-info-list">
             <li>
-                <p><span>课时一</span><span>2015-07-08</span><span>16：45～17：45</span></p>
-                <p><span>上海长宁区</span><span>中山大学图书馆3楼701</span></p>
+                <p>
+                    <span class="mr10">课时一</span>
+                    <span class="mr10">2015-07-08</span>
+                    <span>16：45～17：45</span>
+                </p>
+                <p>
+                    <span class="mr10">上海长宁区</span>
+                    <span>中山大学图书馆3楼701</span>
+                </p>
             </li>
             <li>
-                <p><span>课时二</span><span>2015-07-08</span><span>16：45～17：45</span></p>
-                <p><span>上海长宁区</span><span>中山大学图书馆3楼803</span></p>
+                <p>
+                    <span class="mr10">课时二</span>
+                    <span class="mr10">2015-07-08</span>
+                    <span>16：45～17：45</span></p>
+                <p>
+                    <span class="mr10">上海长宁区</span>
+                    <span>中山大学图书馆3楼803</span>
+                </p>
             </li>
             <li class="add-item">
                 <i class="add"></i>
@@ -65,22 +93,22 @@
         <ul class="course-about-list">
             <li class="border-list">
                 <h3 class="title">项目介绍简介及内容说明</h3>
-                <p>项目介绍：中国电子商务文化节“是我国电子商务行业和领域规格最高、规模最大、行业最全、亮点最多、主题最高、影响最大和最富创意、最受欢迎的主题盛会，是中国电子商务的大舞台和风向标。</p>
-                <p>流程规则：<br />
-                    1.分析培训需求<br />
-                    2.制订培训课题与培训方案<br />
-                    3.备课与准备<br />
-                    4.实施培训<br />
-                    5.对受训者考核
-                </p>
+                <textarea>项目介绍：中国电子商务文化节“是我国电子商务行业和领域规格最高、规模最大、行业最全、亮点最多、主题最高、影响最大和最富创意、最受欢迎的主题盛会，是中国电子商务的大舞台和风向标。
+                    流程规则：
+                        1.分析培训需求
+                        2.制订培训课题与培训方案
+                        3.备课与准备
+                        4.实施培训
+                        5.对受训者考核
+                </textarea>
             </li>
             <li class="border-list">
                 <h3 class="title">老师介绍</h3>
-                <p>我是王老师，曾供职于上海，中国电子商务文化节“是我国电子商务行业和领域规格最高、规模最大、行业最全、亮点最多、主题最高、影响最大和最富创意</p>
+                <textarea>我是王老师，曾供职于上海，中国电子商务文化节“是我国电子商务行业和领域规格最高、规模最大、行业最全、亮点最多、主题最高、影响最大和最富创意</textarea>
             </li>
             <li class="border-list">
                 <h3 class="title">其它说明</h3>
-                <p>写原创内容、录制原创播客节目，都让我结交了许多新朋友。中国电子商务文化节“是我国电子商务行业和领域规格最高、规模最大、行业最全、亮点最多、主题最高、影响最大和最富创意</p>
+                <textarea>写原创内容、录制原创播客节目，都让我结交了许多新朋友。中国电子商务文化节“是我国电子商务行业和领域规格最高、规模最大、行业最全、亮点最多、主题最高、影响最大和最富创意</textarea>
             </li>
         </ul>
 
@@ -89,7 +117,7 @@
         </div>
 
         <div class="btn-box flex_container">
-            <button type="submit" class="submit flex_box mr25">保存草稿</button>
+            <button type="submit" class="submit flex_box mr">保存草稿</button>
             <button type="submit" class="submit flex_box">提交审核</button>
         </div>
     </div>
