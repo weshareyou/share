@@ -55,9 +55,6 @@ body {
     font-size: 15px;
     color: #565656;
 }
-.login-item.mb20 {
-    margin-bottom: 20px;
-}
 .login-clear {
     display: none;
     position: absolute;
@@ -97,9 +94,8 @@ body {
     padding: 0 25px 10px;
 }
 .btn-box .register {
-    margin-right: 25px;
     font-size: 15px;
-    line-height: 40px;
+    line-height: 32px;
     color: #555656;
     text-align: center;
     border: 4px solid #6190cc;
@@ -108,8 +104,11 @@ body {
     border-radius: 5px;
     background: #fafafb;
 }
+.btn-box .register.mr {
+    margin-right: 15px;
+}
 .btn-box .submit {
-    line-height: 48px;
+    line-height: 42px;
     font-size: 15px;
     color: #fff;
     border: 0;
@@ -126,14 +125,14 @@ body {
 .login-other {
     border-top: #e1e1e2 solid 1px;
     position: relative;
-    margin: 50px 25px 0;
+    margin: 30px 25px 0;
 }
 .login-other .text {
     position: absolute;
     top: -10px;
     left: 50%;
-    margin-left: -90px;
-    width: 180px;
+    margin-left: -65px;
+    width: 130px;
     text-align: center;
     background: #f7f7f8;
 }
@@ -143,7 +142,7 @@ body {
 }
 .login-other li {
     float: left;
-    margin-top: 50px;
+    margin-top: 35px;
     width: 33.333333%;
     height: 50px;
 }
@@ -189,10 +188,10 @@ body {
 
 /** 注册 **/
 .send_code {
-    margin-top: 5px;
+    margin-top: 7px;
     width: 150px;
-    height: 40px;
-    line-height: 40px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
     color: #fff;
     border-radius: 5px;
@@ -328,3 +327,18 @@ body {
 .btn-box .submit.mr25 {
     margin-right: 25px;
 }
+
+
+
+/** guide **/
+.guide-main {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -100px;
+    width: 100%;
+}
+.guide-main .btn-box {
+    padding-bottom: 30px;
+}
+
