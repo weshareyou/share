@@ -533,3 +533,20 @@ body {
 .personal-infor-mt {
     margin-top: 15px;
 }
+
+
+/** project **/
+.project-about {
+    margin-bottom: 8px;
+    color: #333;
+}
+.project-about .orange {
+    color: #ea5515;
+}
+.project-about .mr {
+    margin-right: 5px;
+}
+.project-about .text {
+    font-size: 12px;
+}
+
