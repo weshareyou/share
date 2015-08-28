@@ -28,7 +28,8 @@ body {
 .border-item-b {
     border-bottom: #f3f3f4 solid 1px;
 }
-.arrow_r:before {
+.arrow_r:before,
+.arrow_b:before {
     content: "";
     position: absolute;
     width: 8px;
@@ -37,8 +38,14 @@ body {
     right: 15px;
     border-top: #a2a3a3 solid 2px;
     border-right: #a2a3a3 solid 2px;
+}
+.arrow_r:before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.arrow_b:before {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 .fl {
     float: left;
@@ -550,3 +557,105 @@ body {
     font-size: 12px;
 }
 
+
+/** activity **/
+.course-list .label.activity-label {
+    width: auto;
+}
+
+
+/** personalCenter **/
+.personal-head {
+    position: relative;
+    height: 110px;
+    background: #6190cc;
+}
+.personal-head .head {
+    display: inline-block;
+    margin: 19px 30px 0 20px;
+    vertical-align: 27px;
+}
+.personal-head .head img {
+    width: 72px;
+    height: 72px;
+}
+.personal-head .name {
+    font-size: 16px;
+    color: #fff;
+}
+.personal-head.arrow_r:before {
+    top: 50%;
+    margin-top: -4px;
+    border-top: #fff solid 2px;
+    border-right: #fff solid 2px;
+}
+.personal-center-list.personal-center-list2 {
+    overflow: hidden;
+}
+.personal-center-list.personal-center-list2 li {
+    float: left;
+    width: 50%;
+    line-height: 46px;
+    margin: 7px 0;
+}
+.personal-center-list.personal-center-list2 li:last-of-type {
+    border-left: #dee6da solid 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.personal-center-list.personal-center-list2 .num {
+    margin-left: 10px;
+}
+.personal-center-list {
+    background: #fff;
+}
+.personal-center-list li {
+    position: relative;
+    line-height: 45px;
+}
+.personal-center-list .num {
+    color: #6491cc;
+}
+.personal-center-list i {
+    float: left;
+    margin: 0 15px;
+    width: 20px;
+    background: url("../image/icon_personal.png");
+    background-size: 20px;
+}
+.personal-center-list .icon-participate {
+    margin-top: 15px;
+    height: 18px;
+    background-position: 0 0;
+}
+.personal-center-list .icon-initiate {
+    margin-top: 15px;
+    height: 17px;
+    background-position: 0 -18px;
+}
+.personal-center-list .icon-message {
+    margin-top: 16px;
+    height: 13px;
+    background-position: 0 -35px;
+}
+.personal-center-list .icon-discount {
+    margin-top: 15px;
+    height: 15px;
+    background-position: 0px -47px;
+}
+.personal-center-list .icon-share {
+    margin-top: 14px;
+    height: 18px;
+    background-position: 0px -63px;
+}
+.personal-center-list .icon-payment-binding {
+    margin-top: 14px;
+    height: 14px;
+    background-position: 0px -80px;
+}
+.personal-center-list .icon-account-settings {
+    margin-top: 14px;
+    height: 16px;
+    background-position: 0px -94px;
+}
