@@ -604,7 +604,7 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.personal-center-list.personal-center-list2 .num {
+.personal-center-list .num {
     margin-left: 10px;
 }
 .personal-center-list {
@@ -672,7 +672,7 @@ body {
     height: 50%;
 }
 .entrance-box .title {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 .entrance-box .text {
@@ -699,4 +699,226 @@ body {
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-top: -54px;
+}
+
+/** projectdetials **/
+.project-details-info {
+    padding: 10px 10px 10px;
+    background: #fff;
+}
+.project-details-info .title {
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #363636;
+    line-height: 18px;
+}
+.project-details-info .text {
+    padding-bottom: 3px;
+}
+.project-details-info .text .blue {
+    color: #3e8bcb;
+}
+.project-details-info .text .grey {
+    color: #858584;
+}
+.project-details-info img {
+    width: 100%;
+}
+.project-details-course {
+    margin: 0 10px 20px;
+    background: #f6f5f5;
+}
+ .project-details-item {
+    position: relative;
+    padding: 6px 5px 5px 30px;
+    border-bottom:#e2e2e3 solid 1px;
+}
+.project-details-item:last-of-type {
+    border-bottom: none;
+}
+.project-details-item .black {
+    font-size: 15px;
+    color: #353636;
+}
+.project-details-item .grey {
+    color: #818080;
+}
+.project-details-item i {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 20px;
+    height: 19px;
+    background: url(../image/icon_personal.png) no-repeat;
+    background-size: 26px;
+}
+.project-details-item .icon-price {
+    background-position: 0 -143px;
+    height: 17px;
+}
+.project-details-item  .icon-people {
+    background-position: 0 -161px;
+}
+.project-details-item .icon-people {
+    background-position: 0 -161px;
+}
+.project-details-item .icon-date {
+    background-position: 0 -180px;
+}
+.project-details-item .mr35 {
+    margin-right: 35px;
+}
+.project-details-item .mr10 {
+    margin-right: 10px;
+}
+.project-details-more {
+    position: relative;
+    font-size: 15px;
+    line-height: 30px;
+    color: #418bcb;
+    text-align: center;
+}
+.project-details-more.arrow_b:before {
+    left: 50%;
+    top: 7px;
+    margin-left: 38px;
+    border-top: #418bcb solid 1px;
+    border-right: #418bcb solid 1px;
+    width: 10px;
+    height: 10px;
+}
+.project-details-course .project-details-more.arrow_b:before {
+    margin-left: 52px;
+}
+.project-details-introduce {
+    margin: 0 10px 20px;
+}
+.project-details-introduce .title {
+    width: 160px;
+    margin: 0 auto 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #353636;
+    border-bottom: #00a1e9 solid 3px;
+}
+.introduce-text {
+    color: #434c9e;
+    line-height: 16px;
+    margin-bottom: 17px;
+}
+.introduce-text strong {
+    font-size: 16px;
+}
+.about-teacher-title {
+    width: 210px;
+    margin: 0 auto 7px;
+    overflow: hidden;
+}
+.teacher-head {
+    float: left;
+    width: 95px;
+    height: 95px;
+    background: url(../image/head.jpg) no-repeat;
+    background-size: 95px;
+}
+.about-teacher {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: #00a1e9 solid 1px;
+}
+.about-teacher .about {
+    display: block;
+    margin-bottom: 23px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c89bf;
+}
+.about-teacher .teacher {
+    color: #6391cc;
+}
+.about-teacher-text {
+    margin-bottom: 35px;
+    color: #6e6e94;
+}
+.project-details-other {
+    text-align: center;
+}
+.project-details-other input {
+    width: 120px;
+    height: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    background: #00a1e9;
+    color: #fff;
+}
+.project-details-other p {
+    text-align: left;
+    color: #2e2d41;
+}
+.registration-box {
+    margin: 0 10px 20px;
+    background: #f6f5f5;
+}
+.registration-box .num {
+    padding: 10px 0 5px 0;
+    text-indent: 10px;
+    color: #9f9fa0;
+}
+.registration-list li {
+    padding-left: 10px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: #e3e3e3 solid 1px;
+}
+.registration-list li:last-of-type {
+    border-bottom: none;
+}
+.icon-head {
+    float: left;
+    margin-top: 8px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background: url(../image/head.jpg) no-repeat;
+    background-size: 30px;
+}
+.registration-list .name {
+    color: #428ccb;
+}
+.registration-list .price {
+    color: #525455;
+}
+.registration-list .time {
+    float: right;
+    padding-right: 10px;
+    color: #9e9e9f;
+}
+.hots-question {
+    margin: 0 15px 10px;
+}
+.hots-question .title {
+    color: #9f9fa0;
+}
+.question-list li {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.question-list .question-info {
+    float: left;
+}
+.question-list .question-info .name {
+    color: #428ccb;
+    margin-bottom: 4px;
+}
+.question-list .question-info .text {
+    color: #525455;
+    margin-bottom: 4px;
+}
+.question-list .question-info .date {
+    color: #9e9e9f;
+}
+.bg-white {
+    background: #fff;
 }
