@@ -30,7 +30,7 @@
             'jquery': {
                 exports: '$'
             },
-            //'zepto': {
+            //'zepto':    {
             //    exports: '$'
             //},
             'backbone': {
